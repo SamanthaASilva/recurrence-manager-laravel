@@ -4,6 +4,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 
-Route::prefix('/recurrence')->group(function () {
-    Route::get('/recurrence', [Controller::class, 'getRecurrence']);
+Route::prefix('/recurrences')->group(function () {
+    Route::get('/', [Controller::class, 'getRecurrencesByClientId']);
 });
